@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>百度一下，你就知道</title>
+	</head>
+	
+	<style>
+        .image {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+        }
+
+		.search {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.goto {
+			position: absolute;
+			right: 0%;
+		}
+    </style>
+
+
+	<body>
+		<div class="image">
+			<img src="image/googlelogo.png" title="GoogleLogo" alt="GoogleLogo" width="300px"/>
+		</div>
+
+
+		<span class="search">
+			<form action="https://www.baidu.com/s">
+				<input type="text" name="wd"
+				style="
+					height: 40px;
+					width: 350px;
+					padding-left: 10px;
+					border-radius: 10px;">
+	
+				<input type="submit" value="Baidu 搜索"
+				style="
+					width:150px;
+					height:35px;
+					background-color:#4E6EF2;
+					border: none;
+					color:white;
+					border-radius:11px">
+
+				<input type="submit" value="I'm Feeling Lucky!"
+				style="
+					width:150px;
+					height:35px;
+					background-color:#4E6EF2;
+					border: none;
+					color:white;
+					border-radius:11px">
+			</form>
+		</span>
+		
+
+		<!-- 去往图片搜索 应该在右上角 -->
+		<span class="goto">
+			去往<a href="ImageSearch.html" target="_self">百度 Image Search </a>
+		</span>
+
+		
+	</body>
+</html>
